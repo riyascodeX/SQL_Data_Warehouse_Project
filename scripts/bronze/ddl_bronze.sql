@@ -27,7 +27,7 @@ CREATE TABLE bronze.crm_prd_info (
     prd_id       INT,
     prd_key      VARCHAR(50),
     prd_name       VARCHAR(50),
-    prd_country     INT,
+    prd_cost     INT,
     prd_line     VARCHAR(50),
     prd_start_date DATE,
     prd_end_date   DATE
