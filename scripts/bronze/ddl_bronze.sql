@@ -29,13 +29,13 @@ CREATE TABLE bronze.crm_prd_info (
     prd_nm       VARCHAR(50),
     prd_cost     INT,
     prd_line     VARCHAR(50),
-    prd_start_dt DATE,
-    prd_end_dt   DATE
+    prd_start_date DATE,
+    prd_end_date   DATE
 );
 
 
-DROP TABLE IF EXISTS bronze.crm_sales_details;
-CREATE TABLE bronze.crm_sales_details (
+DROP TABLE IF EXISTS bronze.crm_sales_detials;
+CREATE TABLE bronze.crm_sales_detials (
     sls_ord_num  VARCHAR(50),
     sls_prd_key  VARCHAR(50),
     sls_cust_id  INT,
@@ -51,7 +51,7 @@ CREATE TABLE bronze.crm_sales_details (
 DROP TABLE IF EXISTS bronze.erp_loc_a101;
 CREATE TABLE bronze.erp_loc_a101 (
     cid    VARCHAR(50),
-    cntry  VARCHAR(50)
+    country  VARCHAR(50)
 );
 
 
