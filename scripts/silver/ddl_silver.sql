@@ -14,6 +14,7 @@ CREATE TABLE bronze.crm_cust_info (
 DROP TABLE IF EXISTS silver.crm_prd_info;
 CREATE TABLE silver.crm_prd_info (
     prd_id       INT,
+    cat_id       VARCHAR(50),
     prd_key      VARCHAR(50),
     prd_name       VARCHAR(50),
     prd_country       INT,
@@ -24,8 +25,8 @@ CREATE TABLE silver.crm_prd_info (
 );
 
 
-DROP TABLE IF EXISTS silver.crm_sales_detials;
-CREATE TABLE silver.crm_sales_detials (
+DROP TABLE IF EXISTS silver.crm_sales_details;
+CREATE TABLE silver.crm_sales_details (
     sls_ord_num  VARCHAR(50),
     sls_prd_key  VARCHAR(50),
     sls_cust_id  INT,
