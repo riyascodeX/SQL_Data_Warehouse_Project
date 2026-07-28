@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS silver.crm_prd_info;
+DROP TABLE IF EXISTS silver.crm_cust_info;
 CREATE TABLE bronze.crm_cust_info (
     cst_id              INT,
     cst_key             VARCHAR(50),
