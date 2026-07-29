@@ -15,7 +15,8 @@ Parameters:
 
 ===============================================================================
 */
---crm_cust_info
+
+-- 1. TABLE: bronze.crm_cust_info
 INSERT INTO silver.crm_cust_info(
 	cst_id,
 	cst_key,
@@ -57,7 +58,7 @@ SELECT * FROM silver.crm_cust_info
 ----------------------------------------------------------------------------------------------------------
 
 
---crm_prd_info
+-- 2. TABLE: bronze.crm_prd_info
 INSERT INTO(
 	prd_id,
 	prd_key,
@@ -83,7 +84,7 @@ SELECT * FROM silver.crm_prd_info
 ----------------------------------------------------------------------------------------------------------
 
 
---crm_sales_details
+-- 3. TABLE: bronze.crm_sales_details
 INSERT INTO silver.crm_sales_details(
 	sls_ord_num,
 	sls_prd_key,
@@ -133,7 +134,7 @@ SELECT * FROM  silver.crm_sales_details
 ----------------------------------------------------------------------------------------------------------
 
 
---erp_cust_az12
+-- 4. TABLE: bronze.erp_loc_a101
 INSERT INTO silver.erp_cust_az12(
 	cid,
 	bdate,
@@ -161,7 +162,7 @@ SELECT * FROM silver.erp_cust_az12
 ----------------------------------------------------------------------------------------------------------
 
 
---erp_loc_a101
+-- 5. TABLE: bronze.erp_cust_az12
 INSERT INTO silver.erp_loc_a101(
 	cid,
 	country
@@ -185,7 +186,7 @@ SELECT * FROM silver.erp_loc_a101
 ----------------------------------------------------------------------------------------------------------
 
 
---erp_px_cat_g1v2
+-- 6. TABLE: bronze.erp_px_cat_g1v2
 INSERT INTO silver.erp_px_cat_g1v2(
 	id,
 	cat,
